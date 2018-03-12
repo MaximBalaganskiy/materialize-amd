@@ -25,10 +25,8 @@
 		"url": "https://github.com/MaximBalaganskiy/materialize-amd/issues"
 	},
 	"homepage": "https://github.com/MaximBalaganskiy/materialize-amd#readme",
-	"dependencies": {
-		"materialize-css": "0.100.2"
-	},
 	"devDependencies": {
+		"materialize-css": "0.100.2",
 		"copyfiles": "^2.0.0",
 		"requirejs": "^2.3.5",
 		"rimraf": "^2.6.2"
