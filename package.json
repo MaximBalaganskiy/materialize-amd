@@ -34,7 +34,7 @@
 	"aurelia": {
 		"import": {
 			"dependencies": [{
-				"name": "materialize-css",
+				"name": "materialize-amd",
 				"path": "../node_modules/materialize-amd/dist",
 				"main": "js/materialize.amd",
 				"deps": [
