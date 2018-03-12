@@ -1,0 +1,50 @@
+{
+	"name": "materialize-amd",
+	"version": "0.100.1",
+	"description": "AMD compatible Materialize-CSS build",
+	"main": "materialize.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "r_js -o rbuild.js",
+		"postbuild": "copyfiles --up 3 node_modules/materialize-css/dist/**/*.css node_modules/materialize-css/dist/**/*.woff* dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MaximBalaganskiy/materialize-amd.git"
+	},
+	"keywords": [
+		"materialize",
+		"css",
+		"amd",
+		"require"
+	],
+	"author": "Maxim Balaganskiy",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MaximBalaganskiy/materialize-amd/issues"
+	},
+	"homepage": "https://github.com/MaximBalaganskiy/materialize-amd#readme",
+	"dependencies": {
+		"materialize-css": "^0.100.1"
+	},
+	"devDependencies": {
+		"copyfiles": "^2.0.0",
+		"requirejs": "^2.3.5"
+	},
+	"aurelia": {
+		"import": {
+			"dependencies": [{
+				"name": "materialize-css",
+				"path": "../node_modules/materialize-amd/dist",
+				"main": "js/materialize.amd",
+				"deps": [
+					"jquery"
+				],
+				"resources": [
+					"css/materialize.css"
+				],
+				"exports": "Materialize"
+			}]
+		}
+	}
+}
