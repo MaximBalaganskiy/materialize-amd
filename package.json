@@ -11,20 +11,22 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MaximBalaganskiy/materialize-amd.git"
+		"url": "git+https://github.com/aurelia-ui-toolkits/materialize-amd.git"
 	},
 	"keywords": [
 		"materialize",
 		"css",
 		"amd",
-		"require"
+		"require",
+		"aurelia",
+		"cli"
 	],
-	"author": "Maxim Balaganskiy",
+	"author": "aurelia-ui-toolkits",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/MaximBalaganskiy/materialize-amd/issues"
+		"url": "https://github.com/aurelia-ui-toolkits/materialize-amd/issues"
 	},
-	"homepage": "https://github.com/MaximBalaganskiy/materialize-amd#readme",
+	"homepage": "https://github.com/aurelia-ui-toolkits/materialize-amd#readme",
 	"dependencies": {
 		"copyfiles": "^2.0.0"
 	},
