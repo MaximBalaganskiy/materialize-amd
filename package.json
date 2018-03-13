@@ -25,8 +25,10 @@
 		"url": "https://github.com/MaximBalaganskiy/materialize-amd/issues"
 	},
 	"homepage": "https://github.com/MaximBalaganskiy/materialize-amd#readme",
+	"dependencies": {
+		"copyfiles": "^2.0.0"
+	},
 	"devDependencies": {
-		"copyfiles": "^2.0.0",
 		"materialize-css": "0.100.1",
 		"requirejs": "^2.3.5",
 		"rimraf": "^2.6.2"
@@ -46,7 +48,12 @@
 					],
 					"exports": "Materialize"
 				}
-			]
+			],
+			"scripts": {
+				"install": [
+					"node node_modules/copyfiles/copyfiles --up 3 node_modules/materialize-amd/dist/css/*.css node_modules/materialize-amd/dist/fonts/roboto/*.* styles"
+				]
+			}
 		}
 	}
 }
